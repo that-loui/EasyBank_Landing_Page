@@ -117,7 +117,7 @@ const NavMenu = ({ active, hover, setHover }) => (
           }
         />
       </MenuItem>
-    </StyledLink>
+    </StyledLink>   
     <StyledLink
       onMouseOver={() => setHover("about")}
       onMouseOut={() => setHover("")}
