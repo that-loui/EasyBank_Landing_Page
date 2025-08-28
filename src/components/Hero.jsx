@@ -1,6 +1,6 @@
-import Background from "../assets/bg-intro-desktop.svg";
-import BackgroundMobile from "../assets/bg-intro-mobile.svg";
-import MockUp from "../assets/image-mockups.png";
+import Background from "/bg-intro-desktop.svg";
+import BackgroundMobile from "/bg-intro-mobile.svg";
+import MockUp from "/image-mockups.png";
 import styled from "styled-components";
 import RequestBtn from "./RequestBtn";
 
@@ -10,7 +10,6 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: start;
-
 
   @media (min-width: 768px) {
     background-image: url(${Background});
@@ -31,7 +30,7 @@ const Container = styled.div`
       background-size: 85%;
       height: 60rem;
       width: 50rem;
-      z-index: 1;
+      z-index: -1;
     }
   }
 `;
@@ -44,6 +43,7 @@ const BackgroundContainer = styled.div`
   background-repeat: no-repeat;
   height: 20.5rem;
   width: 100%;
+  position: relative;
 
   &::before {
     content: "";
@@ -101,8 +101,7 @@ const Text = styled.p`
   @media (min-width: 768px) {
     width: 82%;
     font-size: 20px;
-    text-align:start;
-    
+    text-align: start;
   }
 `;
 
